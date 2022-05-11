@@ -1,0 +1,216 @@
+.projectMain {
+    margin-top: -80px;
+   
+    .top {
+        background-color: $background;
+
+        .topWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                margin-top: 50px;
+                font-size: 50px;
+                color: $mainColor;
+            }
+
+            .descWrapper {
+                display: flex;
+                width: 60%;
+                margin: 50px auto 0 auto;
+
+                @include media('<=tablet') {
+                    margin-top: 20px;
+                    width:80%;
+                    flex-direction: column;
+                }
+
+                span {
+                    flex: 2;
+                    color: $mainColor;
+                    font-size: 22px;
+                    margin-top: 70px;
+
+                    @include media('<=tablet') {
+                        margin-top: 20px;
+                    }
+                }
+    
+                .buttonWrapper {
+                    flex: 1;
+                    padding-bottom: 50px;
+                    display: flex;
+                    width: 90%;
+                    margin: 0 auto;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    @include media('<=tablet') {
+                        margin-top: 20px;
+                        align-items: center;
+                    }
+    
+                    button{
+                        padding: 0 30px;
+                        width: 320px;
+                        height: 45px;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        border: 2px solid $mainColor;
+                        color: $mainColor;
+                        font-weight: bold;
+                        background-color: transparent;
+                        box-shadow: inset 0 0 0 0  $mainColor;
+                        font-size: 20px;
+                        transition: ease-out 0.3s;
+                        outline: none;
+                        z-index: 99;
+                
+                        &:hover {
+                          cursor: pointer;
+                          color: $secondaryColor;
+                          box-shadow: inset 320px 0 0 0 $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media('<=tablet') {
+            width: 80%;
+        }
+
+        @include media('<=phone') {
+            width: 90%;
+        }
+
+        h3 {
+            color: $mainColor;
+            font-size: 30px;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+
+            @include media('<=phone') {
+                flex-direction: column;
+            }
+
+            .left {
+                flex: 2;
+
+                @include media('<=tablet') {
+                    flex: 1;
+                }
+                
+                h4 {
+                    font-size: 24px;
+                    margin: 30px 0;
+                }
+
+                span {
+                    font-size: 20px;
+                }
+            }
+
+            .right {
+                margin-top: 50px;
+                display: flex;
+                flex: 1;
+                justify-content: flex-end;
+
+                @include media('<=tablet') {
+                    flex: 1;
+                }
+
+                img {
+                    display: block;
+                    height: 400px;
+                    box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+                }
+            }
+        }
+
+        .colorPalette {
+            width: 100%;
+            margin: 60px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .colorDiv {
+                position: relative;
+                height: 180px;
+                width: 180px;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+                transition: 0.3s;
+
+                @include media('<=tablet') {
+                    height: 90px;
+                    width: 90px;
+                }
+
+                @include media('<=phone') {
+                    height: 50px;
+                    width: 50px;
+                }
+                    &:hover span {
+                        color: crimson;
+                    }
+
+                span {
+                    position: absolute;
+                    font-size: 18px;
+                    top: 110%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    transition: 0.3s;
+
+                    @include media('<=phone') {
+                        font-size: 14px;
+                        top: 130%;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+
+        @include media('<=tablet') {
+            width: 80%;
+        }
+
+        @include media('<=phone') {
+            width: 90%;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin: 20px 0;
+            color: $mainColor;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}

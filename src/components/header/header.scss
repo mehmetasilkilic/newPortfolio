@@ -1,0 +1,119 @@
+@import "../../sass/main.scss";
+
+.wrapperH {
+    display: flex;
+
+    .containerM {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        place-content: center;
+
+        @include media('<=phone'){
+          width: 55px;
+          height: 55px;
+        }
+      
+        .itemM {
+          width: 100%;
+          overflow: visible;
+          stroke: #fff;
+          stroke-width: 1;
+          stroke-linejoin: round;
+          stroke-linecap: round;
+        }
+
+        h1 {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            letter-spacing: 2px;
+            bottom: 5px;
+            left: 80%;
+            margin: 10px 0;
+
+            @include media('<=phone'){
+              font-size: 38px;
+              bottom: -1px;
+            }
+        }
+      }
+      
+      .containerA {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          place-content: center;
+
+          @include media('<=phone') {
+            width: 55px;
+            height: 55px;
+          }
+        
+          .itemA {
+            width: 100%;
+            overflow: visible;
+            stroke: #fff;
+            stroke-width: 1;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+          }
+
+          h1 {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            letter-spacing: 2px;
+            bottom: 5px;
+            left: 70%;
+            margin: 10px 0;
+
+            @include media('<=phone') {
+              font-size: 38px;
+              bottom: -1px;
+            }
+        }
+      }
+      
+        .containerK {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          place-content: center;
+
+          @include media('<=phone') {
+            width: 55px;
+            height: 55px;
+          }
+        
+          .itemK {
+            width: 100%;
+            overflow: visible;
+            stroke: #fff;
+            stroke-width: 1;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+          }
+
+          h1 {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            letter-spacing: 2px;
+            bottom: 5px;
+            left: 60%;
+            margin: 10px 0;
+
+            @include media('<=phone') {
+              font-size: 38px;
+              bottom: -1px;
+            }
+        }
+      }
+          
+}
+    
+  
+
+  
