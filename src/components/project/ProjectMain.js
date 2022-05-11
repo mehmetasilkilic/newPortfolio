@@ -12,7 +12,7 @@ const Main = () => {
                 <div className="topWrapper">
                     <h2>The Project</h2>
                     <div className="descWrapper">
-                        {/* {projectId == 0 ? <span>AuWallet</span> : projectId == 1 ? <span>TimeEX</span> : projectId == 2 ? <span>Admin Panel</span> : projectId == 3 ? <span>E-commerce</span> : ""} */}
+                        {/* {projectId === 0 ? <span>AuWallet</span> : projectId === 1 ? <span>TimeEX</span> : projectId === 2 ? <span>Admin Panel</span> : projectId === 3 ? <span>E-commerce</span> : ""} */}
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam sequi autem temporibus eius nisi qui distinctio eligendi, vitae ratione a aspernatur cumque cupiditate provident sunt est inventore ipsa, rem consectetur natus eveniet, consequatur rerum asperiores! Ipsum hic autem, ratione veniam modi praesentium sapiente quisquam deserunt impedit temporibus nostrum ipsa?</span>
                         <div className="buttonWrapper">
                             <a href="https://makecom.herokuapp.com/" rel="noreferrer noopener" target="_blank"><button>Visit Website</button></a>
