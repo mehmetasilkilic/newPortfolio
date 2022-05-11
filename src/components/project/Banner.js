@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const projectId = urlParams.get('id')
+const projectId = Number(urlParams.get('id'))
 
 
 const banner = {
@@ -36,9 +36,9 @@ const Banner = () => {
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={projectId == 0 ? "AuWallet" : projectId == 1 ? "TimeEX" : projectId == 2 ? "TimeEX" : projectId == 3 ? "App" : ""} />
-      <BannerRowCenter title={projectId == 0 ? "Crypto-Wallet" : projectId == 1 ? "Exchange-App" : projectId == 2 ? "Admin-Panel" : projectId == 3 ? "E-commerce" : ""} playMarquee={playMarquee} />
-      <BannerRowBottom title={projectId == 0 ? "Mobile-App" : projectId == 1 ? "Mobile-App" : projectId == 2 ? "Web-App" : projectId == 3 ? "Mobile-App" : ""} />
+      <BannerRowTop title={projectId === 0 ? "AuWallet" : projectId === 1 ? "TimeEX" : projectId === 2 ? "TimeEX" : projectId === 3 ? "App" : ""} />
+      <BannerRowCenter title={projectId === 0 ? "Crypto-Wallet" : projectId === 1 ? "Exchange-App" : projectId === 2 ? "Admin-Panel" : projectId === 3 ? "E-commerce" : ""} playMarquee={playMarquee} />
+      <BannerRowBottom title={projectId === 0 ? "Mobile-App" : projectId === 1 ? "Mobile-App" : projectId === 2 ? "Web-App" : projectId === 3 ? "Mobile-App" : ""} />
     </motion.div>
   );
 };
